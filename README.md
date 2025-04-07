@@ -1,5 +1,5 @@
 This is the backend file. 
-1) Created a Database in Postgresql
+1) Created a Database in Postgresql:
 So first what I've done is created a new database in Postresql named medicine_search.
 Created an table with columns id and name where I have given 50 medicines names.
 CREATE TABLE medicines (
@@ -9,11 +9,11 @@ CREATE TABLE medicines (
 INSERT INTO medicines (name) VALUES 
 ('Paracetamol'), ('Crocin'), ('Amoxicillin'), ('Aspirin'), ('Lisinopril'), etc.
 
-2) Now for the backend implementation using Node.js + Express
+2) Now for the backend implementation using Node.js + Express:
 In this step, it includes initializing the node.js project and installing the required pakages like
 npm install express pg cors dotenv
 
-3) Created a .env file which include the database credentials.
+3) Created a .env file which include the database credentials:
 The reason why I've created it is because it keeps the important or sensitive data out of the code.
 Later it can be loaded from .env files to process.env.
 
@@ -33,4 +33,4 @@ When front end requests fetch('http://localhost:3001/api/medicines?search=asp'),
 {"id": 2, "name": "Aspercreme" }
 
 ]
-6) Then Run the backend server i.e in new command line terminal "node app.js"
+6) Then Run the backend server i.e in new command line terminal "node sever.js"
